@@ -219,3 +219,38 @@ del student["name"]
 # Topic End
 print("–––––––––––––––––––––––––––")
 print("\n")
+
+
+
+
+# Exceptions
+print("* Exceptions")
+print("–––––––––––––––––––––––––––")
+    # - Errors you program is unsure of how to deal with.
+
+dog = {
+    "name": "Spike",
+    "breed": "Boxer Terrier",
+    "feedback": None
+}
+
+dog["has_squeaky_toy"] = True
+
+try:
+    has_squeaky_toy = dog["has_squeaky_toy"]
+    number_of_toys = 3 + has_squeaky_toy # Introduced to convey TypeError handling
+except KeyError:
+    print("Error finding has_squeaky_toy")
+except TypeError as error:
+    print("I can't add these together")
+    print(error)
+# except Exception: #handles all unspecified errors
+#    print("Unknown error")
+
+print("This code has executed")
+
+# Accounting foe exceptions allows the code to continue executing without crashing.
+
+# Topic End
+print("–––––––––––––––––––––––––––")
+print("\n")
