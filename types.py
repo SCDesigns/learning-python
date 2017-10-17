@@ -1,4 +1,6 @@
 # Integers and Floats
+print("* Integers & Floats")
+print("–––––––––––––––––––––––––––")
 
 answer = 42
 pi = 3.14159
@@ -6,48 +8,66 @@ print(answer + pi) # = 45.141.159 // No need to worry about conversion
 print(int(pi)) # == 3
 print(float(answer)) # == 42.0
 
+# Topic End
+print("–––––––––––––––––––––––––––")
+print("\n")
+
 
 
 
 # Strings
+print("* Strings")
+print("–––––––––––––––––––––––––––")
 
 'Hello World' == "Hello World" == """Hello World"""
-"hello".capitalize == "Hello"
-"hello".replace("e", "a") == "hallo"
-"hello".isalpha() == True
-"123".isdigit() == True # Useful when converting to digit
-"some,csv,values".split(",") == ["some","csv","values"]
+print("hello".capitalize()) # == "Hello"
+print("hello".replace("e", "a")) # == "hallo"
+print("hello".isalpha()) # == True
+print("123".isdigit()) # == True # Useful when converting to digit
+print("some,csv,values".split(",")) # == ["some","csv","values"]
 
 # String Format Function
 
 name = "PythonBo"
 machine = "HAL"
 
-"Nice to meeet you {0}. I am {1}".format(name, machine) # where 0 == value name & 1 == value of machine
+print("Nice to meeet you {0}. I am {1}".format(name, machine)) # where 0 == value name & 1 == value of machine
 # Python 3.6 Supports String Interpolation
-f"Nice to meeet you {name}. I am {machine}"
+print(f"Nice to meeet you {name}. I am {machine}")
+
+# Topic End
+print("–––––––––––––––––––––––––––")
+print("\n")
 
 
 
 
 # Boolean and None
+print("* Boolean & None")
+print("–––––––––––––––––––––––––––")
 
 # - Most often used in IF statements and flagging if something has / hasn't been done
 python_course = True
 java_course = False
 # Capital Letters are necessary in these declarations
 
-int(python_course) == 1
-int(java_course) == 0
+print(int(python_course)) # == 1
+print(int(java_course)) # == 0
 
-str(python_course) == "True"
+print(str(python_course)) # == "True"
 
 aliens_found = None # Useful as placeholder variable to later have value / equivalent to false
+
+# Topic End
+print("–––––––––––––––––––––––––––")
+print("\n")
 
 
 
 
 # If Statements
+print("* If Statements")
+print("–––––––––––––––––––––––––––")
 
 number = 5
 if number == 5:
@@ -96,12 +116,18 @@ if number == 17 or python_course:
 # Ternary If Statements
 a = 1
 b = 2
-"bigger" if a > b else "smaller"
+print("bigger" if a > b else "smaller")
+
+# Topic End
+print("–––––––––––––––––––––––––––")
+print("\n")
 
 
 
 
 # Loops
+print("* Loops")
+print("–––––––––––––––––––––––––––")
 
 student_names = ["Mark","Katrina","Jessica"]
 
@@ -142,3 +168,54 @@ while x < 10:
 
 # Infinite Loops
 """If the condition is always true it while will be an infinite loop"""
+
+# Topic End
+print("\n")
+
+
+
+
+# Dictionaries
+print("* Dictionaries")
+print("–––––––––––––––––––––––––––")
+
+    # Allow you to store key value pairs similar to JSON data
+
+student = {
+    "name": "Mark",
+    "student_id": 15163,
+    "feedback": None
+}
+    # Useful for web dev as they can be converted to JSON
+
+all_students = [
+    { "name": "Mark", "student_id": 15163 },
+    { "name": "Katarina", "student_id": 63112 },
+    { "name": "Jessica", "student_id": 30021 },
+]
+
+    # how do we retrieve certain data?
+
+print(student["name"])
+
+    # In order to prevent KeyErrors, ie key not found
+
+print(student.get("last_name", "Unknown")) # == "Unknown"
+
+    # View all available keys OR values
+
+print(student.keys()) # = ["name", "student_id", "feedback"]
+print(student.values()) # = ["Mark", 15163, None]
+
+    # We can update values like so
+
+student["name"] = "James"
+print(student["name"])
+
+    # And delete with
+
+del student["name"]
+
+# Topic End
+print("–––––––––––––––––––––––––––")
+print("\n")
