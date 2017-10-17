@@ -6,6 +6,9 @@ print(answer + pi) # = 45.141.159 // No need to worry about conversion
 print(int(pi)) # == 3
 print(float(answer)) # == 42.0
 
+
+
+
 # Strings
 
 'Hello World' == "Hello World" == """Hello World"""
@@ -24,6 +27,9 @@ machine = "HAL"
 # Python 3.6 Supports String Interpolation
 f"Nice to meeet you {name}. I am {machine}"
 
+
+
+
 # Boolean and None
 
 # - Most often used in IF statements and flagging if something has / hasn't been done
@@ -37,6 +43,9 @@ int(java_course) == 0
 str(python_course) == "True"
 
 aliens_found = None # Useful as placeholder variable to later have value / equivalent to false
+
+
+
 
 # If Statements
 
@@ -88,3 +97,48 @@ if number == 17 or python_course:
 a = 1
 b = 2
 "bigger" if a > b else "smaller"
+
+
+
+
+# Loops
+
+student_names = ["Mark","Katrina","Jessica"]
+
+# For Loop
+for name in student_names:
+    print("Student name is {0}".format(name))
+# Python behaves like a for-each and iterrates over each item with no need for boundaries
+
+# If you want begining and end points
+
+x = 0
+for index in range(10): # Range is the number of times we want our for loop to execute
+    x += 10
+    print("The Value of x is {0}".format(x))
+
+# What if we want to begin at a specific point? Increase by a specific amount?
+# range(BEGINING, END, INCREMENT)
+# Ex: range(5, 10, 2) = [5, 7, 9]
+
+# Exit loop before it finishes???
+
+# Break & Continue
+
+student_names2 = ["Mark","Katrina","Jessica","Not a Robot","Alyssa","Craig","Demi","Tyler"]
+
+for name in student_names2:
+    if name == "Not a Robot":
+        continue
+        print("Found him! " + name)
+        print("Currently testing " + name)
+
+# While Loops
+
+x = 0
+while x < 10:
+    print("Count is {0}".format(x))
+    x += 1
+
+# Infinite Loops
+"""If the condition is always true it while will be an infinite loop"""
