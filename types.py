@@ -254,3 +254,14 @@ print("This code has executed")
 # Topic End
 print("–––––––––––––––––––––––––––")
 print("\n")
+
+# Other Data Types
+print("* Other Data Types")
+print("–––––––––––––––––––––––––––")
+
+complex # For Complex Numbers
+long # Only in Python 2 (replaced w/ INT)
+bytes and bytearray # Sequence of Integers (0 to 255) / Strings Etc.
+tuple = (3, 5, 1, "Mark") # Immutable Lists
+set and frozenset # Lists with only unique objects
+set([3, 2, 3, 1, 5]) == (1, 2, 3, 5) # Removes Duplicates and Orders List
