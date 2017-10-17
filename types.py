@@ -37,3 +37,54 @@ int(java_course) == 0
 str(python_course) == "True"
 
 aliens_found = None # Useful as placeholder variable to later have value / equivalent to false
+
+# If Statements
+
+number = 5
+if number == 5:
+    print("Number is 5")
+else:
+    print("Number is NOT 5")
+
+# Python uses identation instead of {} braces to establish code blocks
+# if and else both end with a ":" colon, a requirement in
+
+# Truthy and Falsy
+
+number = 5
+if number:
+    print("Number is defined and truthy")
+
+text = "Python"
+if text:
+    print("Text is defined and truthy")
+
+# Example 2
+python_course = True
+if python_course: # No need to compare to True
+    print("This will execute")
+
+aliens_found = None
+if aliens_found:
+    print("This will NOT execute")
+
+# Not If
+if number != 5:
+    print("This will NOT execute")
+
+if not python_course:
+    print("This will also NOT execute")
+
+# Multiple If Conditions
+
+number = 3
+if number == 3 and python_course:
+    print("This will execute")
+
+if number == 17 or python_course:
+    print("This will also execute")
+
+# Ternary If Statements
+a = 1
+b = 2
+"bigger" if a > b else "smaller"
