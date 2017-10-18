@@ -1,5 +1,5 @@
 # Our App - PyStudentManager
-# Functions
+# Function Arguments
 print("* Functions")
 print("–––––––––––––––––––––––––––")
 
@@ -45,8 +45,3 @@ var_kw_args("Mark", description="Loves Python", feedback=None, pluralsight_subsc
 # Topic End
 print("–––––––––––––––––––––––––––")
 print("\n")
-
-
-
-
-# Function Arguments
